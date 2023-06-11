@@ -13,31 +13,152 @@ body {
     padding: 0;
     background-color: #f5f5f5;
     font-family: 'Merriweather', serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
+    width: 500px;
 }
 
 
 /* HLAVICKA */
 
+.hlavicka {
+    background-image: url(images/island-hlavicka.jpg);
+    padding: 30px;
+    text-align: center;
+    color: #f5f5f5;
+
+}
+
 .titulek {
     font-family: 'Raleway', serif;
+    font-size: 36px;
+}
+
+.hlavicka-obsah {}
+   /* max-width: 960px; */
+
+
+
+h2 {
+    padding: 20px 0 20px 20px;
+    position: relative;
+    margin-bottom: 40px;
+}   
+
+h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: rgb(0, 123, 255);
+    position: absolute;
+    top: 100%;
+    left: -20px;
 }
 
 
+
 /* MENU */
+
+.menu {
+    text-align: center;
+    list-style: none;
+    padding: 0 20px 0 20px;
+    margin: 20px 0 30px 0;
+}
+
+.menu li {
+    margin: 10px 0 10px 0;
+    border-bottom: 0.5px groove rgb(209, 207, 207); /*nelze nastavit border 0.5px*/
+    color: rgb(221, 221, 221);
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(165, 164, 164);
+    text-transform: uppercase;
+}
 
 
 
 
 /* OBSAH */
 
+.text-prvni {
+    padding: 0 20px 0 20px;
+    color: rgb(26, 24, 24);
+}
+
+.text {
+    padding: 0 20px 0 20px;
+    color: rgb(50, 48, 48);
+}
+
+.text-zmena {
+    padding: 0 20px 0 20px;
+    color: rgb(50, 48, 48);
+}
+
+.obsah {
+    background: white;
+    width: 500px;
+}
+
+.islandobrazek {
+    width: 500px;
+}
+
+.popisek {
+    text-align: center;
+    font-size: 10px;
+    color: rgb(108, 107, 107);
+}
+
+a {
+    color: rgb(165, 164, 164);
+}
+
+.popisek-copy {
+    color: rgb(165, 164, 164);
+}
 
 
+/*.islanduvod {
+    width: 500px;
+} */
 
 /* FOTOGALERIE */
 
-
+.foto {
+    width: 500px;
+   /* nefunguje padding: 0;
+    margin: 0; */
+}
 
 
 /* PATICKA */
+
+.footer {
+    margin: 20px 20px;
+    font-size: 10px;
+    color: rgb(165, 164, 164);
+} /*nefunguje font-size a color/
+
+
+
+
+
+
+
+
+
+
+
+
+/* background:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('images/island-hlavicka.jpg');
+    background-size: auto, cover;
+    background-position: initial, center center;
+    background-repeat: initial, no-repeat;
