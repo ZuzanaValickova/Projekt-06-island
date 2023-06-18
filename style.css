@@ -344,7 +344,14 @@ strong {
     }
 
     .foto {
-        flex-basis: 49%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        /* commenting line349 makes all images the same size but not fill the page; uncommenting it fills the page but breaks the last picture */
+    }
+
+    .foto img {
+        flex-basis: 50%;
         flex-grow: 1;
     }
 
