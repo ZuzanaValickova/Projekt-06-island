@@ -29,7 +29,6 @@ body {
     }
 }
 
-
 /* HLAVICKA */
 
 .hlavicka {
@@ -76,8 +75,6 @@ body {
     border-top: 2px solid white;
 }
 
-
-
 h2 {
     padding: 20px 0 20px 20px;
     margin-bottom: 40px;
@@ -113,10 +110,6 @@ h2 {
      }
     
 
-
-
-
-
 /* MENU */
 
 .menu {
@@ -125,7 +118,6 @@ h2 {
     /* justify-content: center; */
     list-style: none;
 }
-
 
 
 .menu li {
@@ -196,8 +188,6 @@ h2 {
 
         .menu {
             display: block;
-            /* float: left;   */
-            /* width: 150px; */
             margin: 50px 0 0 50px; 
             padding: 0;
             display: flex;
@@ -221,7 +211,6 @@ h2 {
 .telo {
     width: 100%;
     margin: 0 0 30px 0;
-    /* padding-bottom: 30px; */
     background: white;
     box-shadow: 0px 3px 30px rgb(209, 209, 209);
 }
@@ -232,13 +221,6 @@ h2 {
         margin: -50px auto 50px auto;
     }
 }
-
-/* .telo {
-    z-index: 90;
-    margin-top: -40px;
-    margin-left: 30px;
-    margin-right: 20px;
- }*/
 
  h2 {
     margin: 30px 0;
@@ -358,10 +340,6 @@ strong {
 
 }
 
-/*.islanduvod {
-    width: 500px;
-} */
-
 /* FOTOGALERIE */
 
 
@@ -373,11 +351,6 @@ strong {
 .foto img {
     max-width: 100%;
 }
-
-
- /* .foto {
-    max-width: 500px;
-}   */
 
 .foto .popisek {
     margin: 10px 0 20px 0;
@@ -408,33 +381,16 @@ strong {
 
     .foto {
         display: flex;
-        /* flex-wrap: wrap; */
-        flex-grow: 1;
-        /* commenting line349 makes all images the same size but not fill the page; uncommenting it fills the page but breaks the last picture */
+        flex-basis: 50%
     }
 
     .foto img {
-        flex-basis: 50%;
-        flex-grow: 1;
-    }
-
-    .foto:last-child {
-        /* flex-basis: 50%; */
-        flex-shrink: 0;
-    }
+        flex-basis: 100%;
+        } 
 
 }
 
 @media (min-width: 1000px) {
-    .popisek {
-        display: none;
-    }
-
-    .galerie {
-        display: flex;
-        flex-wrap: wrap;
-    }    
-
     .foto {
         flex-basis: 33.333%;
         flex-grow: 1;
